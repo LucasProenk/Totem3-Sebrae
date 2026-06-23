@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Totem</title>
+<link rel="stylesheet" href="timer.css">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(90deg) translateY(-100vw);
+    transform-origin: top left;
+  }
+
+  .canvas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <img src="img/bg.png" alt="">
+
+    <div id="overlay">
+
+      <!-- CRONÔMETRO: bg.png já tem os labels DIAS/HORAS/MINUTOS/SEGUNDOS,
+           aqui só posicionamos os números por cima -->
+      <span class="val-tempo" id="val-dias">00</span>
+      <span class="val-tempo" id="val-horas">00</span>
+      <span class="val-tempo" id="val-minutos">00</span>
+      <span class="val-tempo" id="val-segundos">00</span>
+
+      <!-- CARDS: bg.png já tem ícone + label de cada linha,
+           aqui só posicionamos os números por cima -->
+      <span class="card-val" id="val-bebes">0</span>
+      <span class="card-val" id="val-agua">0</span>
+      <span class="card-val" id="val-animais">0</span>
+      <span class="card-val" id="val-reciclado">0</span>
+
+    </div>
+
+  </div>
+
+  <script src="timer.js"></script>
+</body>
+</html>
