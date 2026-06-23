@@ -1,10 +1,10 @@
 // Edite a data/hora abaixo para o momento real da abertura da exposição
-const INICIO = new Date('2026-06-23T14:10:00');
+const INICIO = new Date('2026-06-22T12:00:00');
 
-const TAXA_BEBES = 3.07;
-const TAXA_AGUA = 373;
-const TAXA_ANIMAIS = 0.317;
-const TAXA_RECICLADO = 0.101;
+const TAXA_BEBES = 0.077;
+const TAXA_AGUA = 0.0017;
+const TAXA_ANIMAIS = 0.027;
+const TAXA_RECICLADO = 0.2124;
 
 function pad2(n) {
   return String(n).padStart(2, '0');
