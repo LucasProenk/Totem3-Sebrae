@@ -27,6 +27,19 @@
 #val-minutos { left: 63.1%; }
 #val-segundos { left: 82.2%; }
 
+.separador-tempo {
+  position: absolute;
+  top: 25.5%;
+  transform: translate(-50%, -50%);
+  font-size: 13vh;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+}
+
+#sep-1 { left: 52.5%; }
+#sep-2 { left: 72.6%; }
+
 /* CARDS — números ficam alinhados à direita de cada linha,
    na mesma altura do ícone/label que já existe no bg.png */
 .card-val {
